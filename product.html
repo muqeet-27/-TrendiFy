@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon"   href="./images/logo.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>Boy’s T-Shirt</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Order Online Or Call Us: (001) 2222-55555</p>
+        <ul class="d-flex">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button id="openCartModal" class="cart-button">Cart</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+        <a href="index.html" class="logo"><h1>TrendiFy</h1></a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link-dd">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a href="product.html">Men's</a></li>
+              <li><a href="womens.html">Women's</a></li>
+              <li><a href="electronics.html">Electronics</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="icons d-flex">
+            <a href="login.html" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-heart"></i>
+              <span class="d-flex">0</span>
+            </div>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="icons d-flex">
+          <a href="login.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+         
+        </div>
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Cart Modal -->
+<div id="cartModal" class="cart-modal-wrapper">
+  <div class="cart-modal-content">
+    <h3>Your Cart</h3>
+
+    <!-- Cart items will be displayed here dynamically -->
+    <div id="cart-items" class="cart-items-list">
+      <!-- Cart items will appear here, dynamically filled by JavaScript -->
+    </div>
+
+    <!-- Display Cart Total -->
+    <div id="cart-total" class="cart-modal-total">
+      <!-- The total price of the cart will be displayed here -->
+    </div>
+
+    <!-- Close button for the cart modal -->
+     
+    <button id="closeCartModal" class="cart-modal-close-btn">Close</button>
+    <button class="cart-modal-checkout-btn">Checkout</button>
+    <button class="cart-modal-reset-btn">reset</button>
+     
+  </div>
+</div>
+
+ 
+
+    <!-- All Products -->
+    <section class="section all-products" id="products">
+      <div class="top container">
+        <h1>All Products</h1>
+        <form>
+          <select>
+            <option value="1">Defualt Sorting</option>
+            <option value="2">Sort By Price</option>
+            <option value="3">Sort By Popularity</option>
+            <option value="4">Sort By Sale</option>
+            <option value="5">Sort By Rating</option>
+          </select>
+          <span><i class="bx bx-chevron-down"></i></span>
+        </form>
+      </div>
+      <div class="product-center container">
+
+
+
+      <!-- Product 1 -->
+<div class="product-item">
+  <div class="overlay">
+    <a href="productDetails.html" class="product-thumb">
+      <img src="./images/1.png" alt="" />
+    </a>
+    <span class="discount">40%</span>
+  </div>
+  <div class="product-info">
+    <span>MEN'S CLOTHES</span>
+    <a href="productDetails.html">Polo Design Shirt</a>
+    <h4>$150</h4>
+    <button class="add-to-cart" data-product-id="1" data-product-name="Polo Design Shirt" data-product-price="150">Add to Cart</button>
+  </div>
+  <ul class="icons">
+    <li><i class="bx bx-heart"></i></li>
+    <li><i class="bx bx-search"></i></li>
+    
+  </ul>
+</div>
+ <!-- Product 2 -->
+<div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/2.png" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="pro-2.html">Adventure Seeker Button-Up</a>
+            <h4>$187</h4>
+            <button class="add-to-cart" data-product-id="2" data-product-name="Adventure Seeker Button-Up" data-product-price="187">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            
+          </ul>
+        </div>
+         <!-- Product 3 -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/3.png" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Casual Comfort Denim Shirt</a>
+            <h4>$105</h4>
+            <button class="add-to-cart" data-product-id="3" data-product-name="Casual Comfort Denim Shirt" data-product-price="105">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+             
+          </ul>
+        </div>
+         <!-- Product 4 -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/4.png" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href=""> Retro Vibes Graphic Tee</a>
+            <h4>$98</h4>
+            <button class="add-to-cart" data-product-id="4" data-product-name="Retro Vibes Graphic Tee" data-product-price="98">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            
+          </ul>
+        </div>
+         <!-- Product 5 -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-5.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Vintage Style Henley</a>
+            <h4>$870</h4>
+            <button class="add-to-cart" data-product-id="5" data-product-name="Vintage Style Henley" data-product-price="870">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            
+          </ul>
+        </div>
+         <!-- Product 6 -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-6.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Modern Plaid Shirt</a>
+            <h4>$564</h4>
+            <button class="add-to-cart" data-product-id="6" data-product-name="Modern Plaid Shirt" data-product-price="564">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            
+          </ul>
+        </div>
+         <!-- Product 7 -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-7.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Sunset Horizon Floral Print</a>
+            <h4>$315</h4>
+            <button class="add-to-cart" data-product-id="7" data-product-name="Sunset Horizon Floral Print" data-product-price="315">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            
+          </ul>
+        </div>
+         <!-- Product 8 -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-4.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">City Life Graphic Tee</a>
+            <h4>$231</h4>
+            <button class="add-to-cart" data-product-id="8" data-product-name="City Life Graphic Tee" data-product-price="231">Add to Cart</button>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+           
+          </ul>
+        </div>
+        
+         
+      </div>
+    </section>
+    <section class="pagination">
+      <div class="container">
+        <span><a href="product.html">1</a></span> <span><a href="electronics.html">2</a></span> <span><a href="womens.html">3</a></span> <span>4</span>
+        <span><i class="bx bx-right-arrow-alt"></i></span>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">About us</a>
+          <a href="">Contact Us</a>
+          <a href="">Term & Conditions</a>
+          <a href="">Shipping Guide</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Customer Services</a>
+          <a href="">Promotion</a>
+          <a href="">Top Brands</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+    <!-- Custom Script -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
